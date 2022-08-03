@@ -1,0 +1,42 @@
+public class project1
+{
+	public static void main(String[] arg)
+	{
+	 
+		int nodigits=0,bkpnumber,rem,result=0;
+		int number=4070;		//Enter number to be checked
+		
+		if(number>0)
+		{
+		
+		bkpnumber=number;
+		while(bkpnumber!=0)
+		{
+			bkpnumber/=10;
+			nodigits++;
+		}
+		
+		bkpnumber=number;
+		while(bkpnumber!=0)
+		{
+			rem=bkpnumber%10;
+			result+=Math.pow(rem, nodigits);
+			bkpnumber/=10;
+		}
+		
+		if(result==number)
+		{
+			System.out.println ("Amstrong number");
+		}
+		else
+		{
+			System.out.println ("NOT Amstrong number");
+		}
+		}
+		
+		else
+		{
+			System.out.println ("NOT Amstrong number");
+		}
+	}
+}
