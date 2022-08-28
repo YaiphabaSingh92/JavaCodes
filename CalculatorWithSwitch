@@ -1,0 +1,50 @@
+
+import java.util.Scanner;
+class Firstcode
+{
+	public static void main(String[] args)
+	{ 
+		float res=0.0f,num1=0.0f,num2=0.0f;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Welcome user");
+		System.out.println("Choose one option \n 1 - addition \n 2 -  substraction \n 3 -multiplication \n 4 - division \n 5 - remainder");
+		int ch= sc.nextInt();
+		
+		if (ch>=1&&ch<=5)
+		{
+		System.out.println("Enter the first number number:");
+		num1=sc.nextFloat();
+		System.out.println("Enter the second number number:");
+		num2=sc.nextFloat();
+		}
+		else
+		{
+			System.out.println("Invalid entry");
+			System.exit(0);
+			
+		
+		}
+		
+		switch(ch)
+		{
+		case 1:
+			res=num1+num2;
+			break;
+		case 2:
+			res=num1-num2;
+			break;
+		case 3:
+			res=num1*num2;
+			break;
+		case 4:
+			res=num1/num2;
+			break;
+		case 5:
+			res=num1%num2;
+		
+		
+		}
+		
+		System.out.println("result is "+res);
+	}
+}
