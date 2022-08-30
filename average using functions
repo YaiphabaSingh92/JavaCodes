@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Firstcode
+{
+	public static void main(String[] args)
+	{	int n1,n2,n3;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the three numbers: ");
+		n1=sc.nextInt();
+		n2=sc.nextInt();
+		n3=sc.nextInt();
+		
+		average(n1,n2,n3);
+	}
+	
+	public static void average(int n1, int n2, int n3)
+	{
+		float avg=(n1+n2+n3)/3;
+		System.out.println("Average of the three numbers is "+avg);
+	}
+}
