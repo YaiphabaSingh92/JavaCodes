@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Firstcode
+{	
+	
+	public static void main(String[] args)
+	{
+		int nam1,nam2,sum;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the first number:" );
+		nam1=sc.nextInt();
+		System.out.println("Enter the second number:" );
+		nam2=sc.nextInt();
+		
+		sumFn(nam1,nam2);
+		
+	}
+	public static void sumFn(int num1, int num2)
+	{
+		int sum=num1+num2;
+		System.out.println("Your sum is"+sum);
+		return;
+	}
+}
