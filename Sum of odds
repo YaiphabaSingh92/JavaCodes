@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Firstcode
+{
+	public static void main(String[] args)
+	{	int n;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		n=sc.nextInt();
+		
+		
+		oddsum(n);
+	}
+	
+	public static void oddsum(int n)
+	{	int sum=0;
+		for(int i=1;i<=n;)
+		{
+		sum=sum+i;	
+		i=i+2;
+		}
+		System.out.println("sum is "+sum);
+	}
+}
