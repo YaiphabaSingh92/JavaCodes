@@ -1,0 +1,38 @@
+import java.util.*;
+class Firstcode
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the two numbers: ");
+		int num1=sc.nextInt();
+		int num2=sc.nextInt();
+		
+		hcf(num1,num2);
+	}
+	
+	public static void hcf(int num1, int num2)
+	{	int small=0,hcf=1;
+		if(num1<num2) //to find smallest number
+		{
+			small=num1;
+		}
+		else if (num1==num2)
+		{
+			System.out.println("Both are same number");
+		}
+		else
+		{
+			small=num2;
+		}
+		
+		for(int i=1;i<=small;i++) //using loops to find the common factor
+		{
+			if(num1%i==0&num2%i==0)
+			{
+				hcf=i;
+			}
+		}
+		System.out.println("HCF is "+hcf);
+	}
+}
