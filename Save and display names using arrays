@@ -1,0 +1,27 @@
+import java.util.*;
+    class Firstcode
+    {
+    	public static void main(String args[])
+    	{
+    		Scanner sc=new Scanner(System.in);
+    		System.out.println("How many do you want to input? ");
+    		int n=sc.nextInt();
+    		String name[]=new String[n]; 
+    		sc.nextLine(); //important thing to remove garbage
+    		                //https://stackoverflow.com/questions/13102045/scanner-is-skipping-nextline-after-using-next-or-nextfoo
+                        
+    		System.out.println("Enter the names: ");
+    		for(int i=0;i<n;i++)
+    		{
+    			name[i]=sc.nextLine();
+    			
+    		}
+    		
+    		
+    		System.out.println("");
+    		for(int i=0;i<n;i++)
+    		{
+    			System.out.println(name[i]);
+    		}
+    	}
+    } 
