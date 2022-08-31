@@ -1,0 +1,43 @@
+import java.util.*;
+class Firstcode
+{
+	public static void main(String args[])
+	{	
+		int min=Integer.MAX_VALUE;
+		int max=Integer.MIN_VALUE;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number of element in arrays:");
+		int n=sc.nextInt();
+		sc.nextLine();
+		int num[]=new int[n];
+		
+		
+		System.out.println("Enter the numbers:");
+		for(int i=0;i<n;i++)
+		{
+			num[i]=sc.nextInt();
+			sc.nextLine();
+		}
+		
+		for(int i=0;i<n;i++)
+		{
+			if(num[i]>max)
+			{
+				max=num[i];
+			}
+		}
+		
+		for(int i=0;i<n;i++)
+		{
+			if(num[i]<min)
+			{
+				min=num[i];
+			}
+		}
+		
+		
+		System.out.println("Largest object is "+max);
+		System.out.println("Smallest object is "+min);
+		
+	}
+}
