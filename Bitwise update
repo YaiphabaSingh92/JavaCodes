@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class Firstcode
+{
+	public static void main(String args[])
+	{	int res;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number to do bitwise update:");
+		int n=sc.nextInt();
+		System.out.println("Enter the position: ");
+		int pos=sc.nextInt();
+		System.out.println("Select 0 or 1:");
+		int opr=sc.nextInt();
+		
+		int bitmask=1<<pos;
+		
+		if(opr==1) //set bit
+		{
+			res=bitmask|n;
+		}
+		else //clear bit
+		{
+			int inbitmask=~bitmask; //finding complimentary
+			res = inbitmask&n;
+		}
+		
+		System.out.println("Result is: "+res);
+		
+	}
+}
