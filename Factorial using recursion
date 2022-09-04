@@ -1,0 +1,28 @@
+class Firstcode
+{
+	public static void main(String args[])
+	{
+		
+		
+		fact(1,12,1); 
+	}
+	public static void fact(int i, int n, int f)
+	{
+		if(n==0)
+		{
+			System.out.println("1");
+			return;
+		}
+		
+		if(i==n)
+		{
+			f=f*i;
+			System.out.println(f);
+			return;
+		}
+		
+		f=f*i;
+		
+		fact(i+1,n,f);
+	}
+}
