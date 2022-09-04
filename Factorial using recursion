@@ -3,26 +3,18 @@ class Firstcode
 	public static void main(String args[])
 	{
 		
-		
-		fact(1,12,1); 
+		int n=4;
+		fact(n); 
+		System.out.println(fact(n));
 	}
-	public static void fact(int i, int n, int f)
+	public static int fact(int n)
 	{
-		if(n==0)
+		if(n==1 ||n==0)
 		{
-			System.out.println("1");
-			return;
+			return 1;
 		}
-		
-		if(i==n)
-		{
-			f=f*i;
-			System.out.println(f);
-			return;
-		}
-		
-		f=f*i;
-		
-		fact(i+1,n,f);
+		int fact_nm1=fact(n-1);
+		int fact_n=n*fact_nm1;
+		return fact_n;
 	}
 }
