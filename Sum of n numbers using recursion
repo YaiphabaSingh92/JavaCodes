@@ -1,0 +1,23 @@
+class Firstcode
+{
+	public static void main(String args[])
+	{
+		
+		
+		sumOf(1,4,0);
+		
+	}
+	public static void sumOf(int i,int n,int sum)
+	{
+	
+		
+		if (i==n)
+		{
+			sum+=i;
+			System.out.println(sum);
+			return;
+		}
+		sum+=i;
+		sumOf(i+1,n,sum);
+	}
+}
