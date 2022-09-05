@@ -1,0 +1,20 @@
+class Firstcode
+{
+	public static void main(String args[])
+	{
+		String txt="abcd";
+	    int ind=txt.length()-1;
+		rev(ind,txt);		
+		
+	}
+	
+	public static void rev(int ind,String txt)
+	{
+		if(ind==-1)
+		{
+			return;
+		}
+		System.out.print(txt.charAt(ind));
+		rev(ind-1,txt);
+	}
+}
