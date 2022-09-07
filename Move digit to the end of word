@@ -1,0 +1,38 @@
+class Firstcode
+	
+{	
+	public static void main(String args[])
+	{
+		String str="axbcxxd";
+		char alpbt='x';
+		int count=0;
+		String newstr="";
+		move(str,newstr,0,alpbt,count);		
+	}
+	
+	public static void move(String str,String newstr,int indx,char alpbt,int count)
+	{	
+		
+		if(str.length()==indx)
+		{
+			for(int i=1;i<=count;i++)
+			{
+				newstr=newstr+alpbt;
+			}
+			System.out.println(newstr);
+			return;
+		}
+		
+		if(str.charAt(indx)==alpbt)
+		{
+			count++;
+		}
+		else
+		{
+			newstr+=str.charAt(indx);
+		}
+		
+		move(str,newstr,indx+1,alpbt,count);
+	}
+	
+}
