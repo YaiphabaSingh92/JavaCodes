@@ -1,0 +1,31 @@
+class Firstcode
+	
+{	
+	public static void main(String args[])
+	{
+		int n[]= {1,2,4,5,8,9,11,3};
+		
+		sortIs(n,0);		
+	}
+	
+	public static void sortIs(int n[],int indx)
+	{	
+		if(indx==n.length-1)
+		{
+			System.out.println("Sorted");
+			return;
+		}
+		if(n[indx]>n[indx+1])
+		{
+			
+			System.out.println("Not sorted");
+			return;
+		}
+		
+		
+		
+		sortIs(n,indx+1);
+		
+	}
+	
+}
