@@ -1,0 +1,36 @@
+class Firstcode
+	
+{	
+	public static boolean map[]=new boolean[25];
+	public static void main(String args[])
+	{
+		String str="axbcxxxxxffddda";
+		int indx=0;
+		String newStr="";
+		remDuplicate(str,indx,newStr);
+			
+	}
+	
+	public static void remDuplicate(String str,int indx,String newStr)
+	{	
+	
+		if(indx==str.length())
+		{
+			System.out.println(newStr);
+			return;
+		}
+		if(map[str.charAt(indx)-'a']==true)
+		{
+			remDuplicate(str,indx+1,newStr);
+		}
+		else
+		{
+			map[str.charAt(indx)-'a']=true;
+			newStr+=str.charAt(indx);
+			remDuplicate(str,indx+1,newStr);
+			
+		}
+		
+	}
+	
+}
