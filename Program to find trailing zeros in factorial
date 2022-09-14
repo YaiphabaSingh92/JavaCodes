@@ -2,19 +2,17 @@ class Firstcode
 {
 	public static void main(String args[])
 	{	
-		int n=20,count=0;
+		int n=30,res=0;
 		
-		for(int i=1;i<=n;i++)
+		for(int i=5;i<=n;)
 		{
 			
-			if(i%5==0)
-			{
-				count++;
-			}
+			res+=n/i;
+			i=i*5;
 		}
 		
 	
-		System.out.println(count);
+		System.out.println(res);
 		
 		
 		
