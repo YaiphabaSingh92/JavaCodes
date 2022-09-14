@@ -1,0 +1,43 @@
+import java.util.*;
+class Firstcode
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		//takes input using scanner class
+		
+		System.out.println("Enter the string: ");
+		String str=sc.next();
+		
+		isPalindrome(str);
+	}
+	
+	public static void isPalindrome(String str)
+	{
+		String rev="";
+		
+		
+		//make a new string ie reverse of str
+		
+		for(int i=str.length()-1;i>=0;i--)
+		{
+			rev+=str.charAt(i);
+		}
+		
+
+		//== checks referential equality of two strings
+		// equals should be used here instead
+		
+		if(rev.equals(str)) 
+			
+		{
+			System.out.println(str+" is a palindrome");
+		}
+		else
+		{
+			System.out.println(str+" is not a palindrome");
+		}
+		return;
+	}
+}
