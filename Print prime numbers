@@ -1,0 +1,37 @@
+import java.util.*;
+class Firstcode
+{
+	public static void main(String args[])
+	{
+		int n=200;
+		Boolean prime[]=new Boolean[n+1]; //creating a boolean array
+		
+		isPrime(prime,n);
+	}
+	
+	public static void isPrime(Boolean prime[],int n)
+	{
+		Arrays.fill(prime, true); //filling array with default value true
+		prime[0]=false; //assuming 0 and 1 as false since they are not even numbers
+		prime[1]=false;
+		
+		
+		for(int i=2;i*i<=n;i++) //loop to traverse through numbers with value i until root of n
+		{
+			for(int j=i*2;j<=n;j+=i) //loop to find multiples of i and make it false
+			{
+				prime[j]=false;
+			}
+		}
+		
+		
+		for(int i=0;i<=n;i++) //loop to display the prime numbers
+		{
+			if(prime[i]==true)
+			{
+				System.out.println(i);
+			}
+		}
+		
+	}
+}
