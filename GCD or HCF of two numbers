@@ -1,0 +1,23 @@
+
+class Firstcode
+{
+	public static void main(String args[])
+	{
+		int num1=22,num2=12;
+		
+		
+		System.out.println(gcd(num1,num2));
+	}
+	
+	public static int gcd(int a, int b)
+	{
+		if(a==0 || b==0)
+		{
+			return a; //recursion continues until b is 0
+		}
+		
+		return gcd(b,a%b); //euclids theory
+		
+		
+	}
+}
