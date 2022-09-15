@@ -1,0 +1,15 @@
+class Firstcode
+{
+	public static void main(String args[])
+	{
+		int n=73,count=0;
+		
+		while(n!=0)
+		{
+			n=(n&(n-1)); // n&(n-1) clears the least significant set bit
+			count++;
+		}
+		
+		System.out.println("Number of 1 is: "+count);
+	}
+}
