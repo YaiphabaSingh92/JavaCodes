@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Firstcode
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		
+		//n>>31 = -1 to all negative numbers and zero for others
+		
+		if((a>>31)==(b>>31))
+				{
+			System.out.println("Same sign");
+				}
+		else
+		{
+			System.out.println("Different sign");
+		}
+	}
+	
+	
+}
