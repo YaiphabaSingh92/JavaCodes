@@ -4,7 +4,7 @@ class Firstcode
 	public static void main(String args[])
 	{
 		int n=20;
-		boolean array1[]=Primesiev(n);
+		boolean array1[]=Primesiev[n+1];
 		
 		for(int i=0;i<=n;i++)
 		{
