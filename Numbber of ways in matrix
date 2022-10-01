@@ -1,0 +1,21 @@
+class Firstcode
+{
+	public static void main(String args[])
+	{
+	
+	
+	System.out.println(mat(2,3));
+	}
+	
+	static int mat(int a,int b)
+	{
+		if(a==1 || b==1)
+		{
+			return 1;
+		}
+		
+		return mat(a-1,b)+mat(a,b-1);
+		
+	}
+	
+}
