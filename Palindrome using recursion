@@ -1,0 +1,35 @@
+class Firstcode
+{
+	public static void main(String args[])
+	{
+	String s="ababa";
+	int r=s.length();
+		
+	if (palin(s,0,r-1)==true)
+	{
+		System.out.println("Palindrome");
+	}
+	else
+	{
+		System.out.println("not palindrome");
+	}
+
+	}
+	
+	static boolean palin(String s,int  l,int r)
+	{
+		if(l>=r)
+		{
+			return true;
+		}
+		
+		if(s.charAt(l)!=s.charAt(r))
+		{
+			return false;
+		}
+		
+		return palin(s,l+1,r-1);
+	}
+	
+	
+}
